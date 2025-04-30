@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form - NeuroNexus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <div class="logo">
+                    <i class="fas fa-clipboard-list"></i>
+                </div>
+                <h1>Information Form</h1>
+                <p>Please fill in your details to complete the registration process</p>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="fullName">Full Name <span class="required">*</span></label>
+                    <div class="input-container">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="fullName" name="fullName" class="form-control" required 
+                               placeholder="Enter your full name">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contactNumber">Contact Number <span class="required">*</span></label>
+                    <div class="input-container">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" id="contactNumber" name="contactNumber" class="form-control" required
+                               placeholder="Enter your phone number">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Address <span class="required">*</span></label>
+                    <div class="input-container textarea-container">
+                        <i class="fas fa-home"></i>
+                        <textarea id="address" name="address" class="form-control" rows="3" required
+                                  placeholder="Enter your complete address"></textarea>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="companyName">Company Name <span class="required">*</span></label>
+                    <div class="input-container">
+                        <i class="fas fa-building"></i>
+                        <input type="text" id="companyName" name="companyName" class="form-control" required
+                               placeholder="Enter your company name">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <div class="input-container">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" class="form-control" required
+                               placeholder="Enter your email address">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="department">Department <span class="required">*</span></label>
+                    <div class="input-container">
+                        <i class="fas fa-briefcase"></i>
+                        <select id="department" name="department" class="form-control" required>
+                            <option value="" selected disabled>Choose your department</option>
+                            <option value="hr">HR</option>
+                            <option value="sales">Sales</option>
+                            <option value="development">Development</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Gender <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male"><i class="fas fa-mars"></i> Male</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female"><i class="fas fa-venus"></i> Female</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="prefer-not-to-say" name="gender" value="prefer-not-to-say">
+                            <label for="prefer-not-to-say"><i class="fas fa-user-secret"></i> Prefer not to say</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">
+                        <span>Submit</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </form>
+            <div class="form-footer">
+                <p>© 2025 NeuroNexus. All information is secure and encrypted.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
